@@ -14,7 +14,9 @@ public class myCamera : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.position = Quaternion.Euler(0,Time.time * 10,0) * position;
+		transform.position = Quaternion.Euler(Mathf.Sin(Time.time)*30
+									,Time.time * 10,
+									0) * position;
 		transform.LookAt(Vector3.zero);
 	}
 }

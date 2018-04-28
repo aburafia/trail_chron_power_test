@@ -41,5 +41,7 @@ public class myTrail : MonoBehaviour {
 
 		rb.AddForce(-transform.position);
 
+		//結局AddForceしたのはベクトルの合計値になって、実際のposition計算は１回なんだよね。なるほど
+
 	}
 }
